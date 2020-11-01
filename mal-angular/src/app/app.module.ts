@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { MenuComponent } from './menu/menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { MenuComponent } from './menu/menu.component';
     TopbarComponent,
     MenuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
